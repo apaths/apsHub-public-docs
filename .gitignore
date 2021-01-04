@@ -1,0 +1,19 @@
+# NPM modules
+node_modules
+npm-debug.log
+package-lock.json
+
+# Configuration Secrets
+.env
+*.env
+
+# Sublime files
+*.sublime-project
+*.sublime-workspace
+
+# vscode
+.vscode
+
+# OSX wreckagegit
+.DS_Store
+Thumbs.db
