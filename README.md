@@ -3,22 +3,20 @@
 ## Overview
 
 - [Introduction](#introduction)
+- [Registration](#registration)
+- [Authentication](#autentication)
 - [API Reference](#api-reference)
-  - [Registration](#registration)
-  - [Authentication](#autentication)
-  - [Services](#services)
 
 
 ## Introduction
 
 The APS insurance, claim, and payment hub application.
 
-
 ## Registration
 
 - [Registration](./docs/registration/README.md)
 
-#### Authentication
+## Authentication
 
 - [Authentication](./docs/api/auth/README.md)
 

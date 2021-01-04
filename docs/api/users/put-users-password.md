@@ -1,4 +1,4 @@
-# PUT/ /api/v1/users/password
+# `PUT/` api/v1/users/password
 
 
 ## Overview

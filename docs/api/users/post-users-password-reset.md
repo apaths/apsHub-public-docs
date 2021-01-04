@@ -1,4 +1,4 @@
-# POST/ /api/v1/users/password/reset
+# `POST/` api/v1/users/password/reset
 
 
 ## Overview
