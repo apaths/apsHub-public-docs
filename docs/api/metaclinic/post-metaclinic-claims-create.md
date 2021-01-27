@@ -1,4 +1,4 @@
-# POST/ /api/v1/metaclinic/claims
+# POST/ /api/v1/metaclinic/claims/create
 
 
 ## Overview
@@ -49,7 +49,7 @@ optional unless marked with `REQUIRED`.
 
 ### Example request
 
-```GET /api/v1/metaclinic/claims```
+```GET /api/v1/metaclinic/claims/create```
 
 
 ## Success responses

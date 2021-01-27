@@ -11,7 +11,11 @@ insurance elibilbilty checks.
 ## API Reference
 
 **Check a patient's eligibility**\
-[`GET /api/v1/metaclinic/eligibility`](./get-metaclinic-eligibility.md)
+[`POST /api/v1/metaclinic/eligibility`](./post-metaclinic-eligibility.md)
 
 **Submit an insurance payment claim**\
-[`POST /api/v1/metaclinic/claims`](./post-metaclinic-claims.md)
+[`POST /api/v1/metaclinic/claims/create`](./post-metaclinic-claims-create.md)
+
+**Update an insurance payment claim**\
+[`POST /api/v1/metaclinic/claims/update`](./post-metaclinic-claims-update.md)
+

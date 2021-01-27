@@ -1,4 +1,4 @@
-# GET/ /api/v1/metaclinic/eligibility
+# POST/ /api/v1/metaclinic/claims/update
 
 
 ## Overview
@@ -22,7 +22,8 @@
 
 ## Description
 
-Fetch the state of a patient's eligibility with the APS payment processor. You
+When a claim is updated in the Metaclinic LIMS it will trigger a request
+on the APS Hub for proxied update to APS' payment processor. . You
 need to be authenticated and authorized on the APS Hub application to use
 this route. The server will [respond](#success-responses) according to the
 results of the supplied [input fields](#body-parameters).
@@ -30,7 +31,7 @@ results of the supplied [input fields](#body-parameters).
 ## Authentication
 
 You must be an authenticated user to receive an eligibilty status See [Authentication](../auth/README.md).
-Use the [`auth/login`](../auth/post-login.md) endpoint to receive your token.
+Use the [`auth/login`](../auth/post-auth-login.md) endpoint to receive your token.
 Supply the token in the Authorization Header as a bearer token.
 
 ## Request construction
@@ -48,7 +49,7 @@ optional unless marked with `REQUIRED`.
 
 ### Example request
 
-```GET /api/v1/metaclinic/eligibility```
+```GET /api/v1/metaclinic/claims/create```
 
 
 ## Success responses
@@ -62,43 +63,12 @@ successfully.
 **Returns** \
 An object with the schema shown below.
 
+> **TBA: FOR METACLINIC** to match the current request schema.
+
 **Example return**
 ``` Javascript
 {
-  "patientEligibilityChecks": [
-    {
-      "ID": 607575,
-      "payerID": 701,
-      "casePatientID": 547785,
-      "payerClearingHouseID": 701,
-      "insuranceType": 1,
-      "eligibilityCheckDate": "2020-12-30T19:31:25.789Z",
-      "eligibilityRequestID": "16093566857895141",
-      "eligibilityResult": true,
-      "eligibilityResponse": "ELIGIBLE",
-      "eligibilityError": "",
-      "responseFileStorageLinkID": 4405205,
-      "patientData": {
-        "payerID": "64157",
-        "accessionID": "Y20-01717",
-        "insuranceID": "12345",
-        "dateOfService": "2020-12-28",
-        "insuredGender": "M",
-        "patientGender": "M",
-        "sequenceNumber": "16093566857895141",
-        "insuredLastName": "Cole",
-        "patientLastName": "Cole",
-        "insuredFirstName": "James",
-        "patientFirstName": "James",
-        "insuredMiddleName": "T",
-        "patientMiddleName": "T",
-        "insuredDateOfBirth": "1915-06-13",
-        "patientDateOfBirth": "1915-06-13",
-        "insuredRelationship": "self",
-        "patientSocialSecurityNumber": "444-44-4444"
-      }
-    }
-  ]
+
 }
 ```
 
